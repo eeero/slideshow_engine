@@ -1,0 +1,24 @@
+<head>
+  <title>Prese</title>
+</head>
+
+<body>
+  {{> prese}}
+</body>
+
+<template name="prese">
+    {{#each rows}}
+        <div>
+          {{#each columns}}
+            <div class="slide" id="{{id}}">
+              {{#if title}}
+               <h1>{{title}}</h1>
+              {{/if}}
+              {{#if content}}
+               <p>{{content}}</p>
+              {{/if}}
+            </div>
+          {{/each}}
+        </div>
+    {{/each}}
+</template>

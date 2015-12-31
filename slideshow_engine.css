@@ -1,0 +1,16 @@
+/* CSS declarations go here */
+
+.slide {
+  display: inline-block;
+  border: solid black;
+  width: 300px;
+  height:200px;
+}
+
+.slide.selected {
+  border: solid red;
+}
+
+.slide_content {
+  margin-left: 50%;
+}
